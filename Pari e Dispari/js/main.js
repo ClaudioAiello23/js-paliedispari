@@ -9,35 +9,19 @@ let numberChoice = prompt('scrivi un numero da 1 a 5');
 console.log('Scelta utente: ', numberChoice);
 
 
-/*PROVA IMPOSTAZIONE PER SCELTA PARI DISPARI
+// FUNZIONE GENERAZIONE NUMERO RANDOM 
+function GenRandomNum() {
 
-    if (pariDispari === 'PARI' || pariDispari === 'DISPARI' ) {
-
-       let numberChoice = prompt('scrivi un numero da 1 a 5');
-        console.log('Scelta utente: ', numberChoice);
-        
-    } else {
-
-       pariDispari = prompt('scrivi PARI o DISPARI');
-    }
-
-    console.log('Scelta utente: ', pariDispari);*/
+    const randomNumber = Math.floor((Math.random() * 5) + 1);
+    return randomNumber;
     
-
-
-/*PROVA IMPOSTAZIONE PER SCELTA NUMERO DA 1 A 5
-
-let numberChoice = prompt('scrivi un numero da 1 a 5');
-
-   if (numberChoice > 1 && numberChoice <= 5) {
-
-        console.log('Scelta utente: ', numberChoice);
-        
-    } else {
-    
-    numberChoice = prompt('scrivi un numero da 1 a 5');
 }
-*/
+
+
+// RICHIAMO FUNZIONE GENERAZIONE NUMERO RANDOM 
+let cpuNumber = GenRandomNum();
+console.log ('scelta cpu: ', cpuNumber);
+
 
 
 

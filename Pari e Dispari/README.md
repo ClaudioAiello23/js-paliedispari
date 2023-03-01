@@ -7,8 +7,8 @@ Dichiariamo chi ha vinto.
 -------------------------------------------------------------
 SVOLGIMENTO ESERCIZIO 'PARI E DISPARI' - IPOTESI
 
-- l'utente sceglie PARI o DISPARI (usare Prompt?).
-- l'utente inserisce un numero da 1 a 5 (prova a inserire una condizione che se l'utente inserisce un numero diverso da 5 o un numero non dekìl segno scelto, deve ripetere l'inserimento)
+- l'utente sceglie PARI o DISPARI (prova a inserire un ciclo while e una condizione che se l'utente inserisce una cosa diversa dal valore PARI o DISPARI, deve ripetere l'inserimento.
+- l'utente inserisce un numero da 1 a 5 (prova a inserire un ciclo while e una condizione che se l'utente inserisce un numero diverso da 5 o un numero non del segno scelto, deve ripetere l'inserimento).
 - creare una FUNCTION che genera un numero random da 1 a 5 per la CPU
 - richiamare la FUNCTION per fare la somma dei due numeri
 - creare un FUNCTION (collegata a una IF) che stabilisca se la somma è pari o dispari.
