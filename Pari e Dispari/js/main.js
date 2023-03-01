@@ -22,23 +22,34 @@ function resultEven(num) {
 
 }
 
-// ************************************************************
+// ******************************************************
 
 
+/*INIZIALIZZO LA VARIABILE PARI/DISPARI CHE DOVRA' ESSERE SCELTA DALL'UTENTE*/
+let pariDispari;
 
-// L'UTENTE SCEGLIE PARI O DISPARI (PROMPT)
-let pariDispari = prompt('scrivi PARI o DISPARI');
+/*IMPOSTO CICLO DO-WHILE CHE CONTINA AD ESEGUIRE LA RICHIESTA PARI/DISPARI
+ SE L'UTENTE INSERISCE QUALCOSA DI DIVERSO DA PARI E DISPARI*/
+do {
+pariDispari = prompt('scrivi PARI o DISPARI');
+    
+} while (pariDispari.toUpperCase() !== 'PARI' &&  pariDispari.toUpperCase() !== 'DISPARI');
+
 console.log('Scelta Pari/Dispari: ', pariDispari);
 
 
-// CREAZIONE ARRAY PARI E DISPARI
-const evenArray = [2, 4];
-const oddArray = [1, 3, 5];
+/*INIZIALIZZO LA VARIABILE USER NUMBER CHE DOVRA' ESSERE SCELTA DALL'UTENTE*/
+let userNumber;
 
-
-// L'UTENTE SCEGLIE UN NUMERO DA 1 A 5 (PROMPT)
-let userNumber = Number (prompt('scrivi un numero da 1 a 5'));
+/*IMPOSTO CICLO DO-WHILE CHE CONTINUA AD ESEGUIRE LA RICHIESTA DEL NUMERO
+FINCHE' L'UTENTE INSERISCE UN NUMERO NON COMPRESO TRA 1 E 5.*/
+do {
+    userNumber = Number(prompt('scrivi un numero da 1 a 5'));
+        
+    } while (userNumber < 1 || userNumber > 5);
+ 
 console.log('Scelta Numero Utente: ', userNumber);
+
 
 
 // RICHIAMO FUNZIONE A: GENERA NUMERO RANDOM DA 1 A 5
@@ -62,11 +73,6 @@ if (finalNumber = resultEven(finalNumber)) {
 
 }
 
-
-
-
-    
- 
 
 
 
